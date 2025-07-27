@@ -1,0 +1,14 @@
+services:
+  py_for_data_analysis:
+    container_name: py_for_data_analysis
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/home/jovyan/work:delegated
+    ports:
+      - 8888:8888
+    env_file:
+      - .env
+    command: "start-notebook.sh --NotebookApp.token="
+
