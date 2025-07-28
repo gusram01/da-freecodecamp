@@ -1,6 +1,6 @@
 services:
-  py_for_data_analysis:
-    container_name: py_for_data_analysis
+  da_freecodecamp:
+    container_name: da_freecodecamp
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,4 +11,10 @@ services:
     env_file:
       - .env
     command: "start-notebook.sh --NotebookApp.token="
+    networks:
+      - da_freecodecamp-network
+
+networks:
+  da_freecodecamp-network:
+    driver: bridge
 

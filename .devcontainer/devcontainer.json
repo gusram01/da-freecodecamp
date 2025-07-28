@@ -1,7 +1,7 @@
 {
   "name": "Statistics Dev Container",
   "dockerComposeFile": "../docker-compose.yml", // Path to your Docker Compose file
-  "service": "py_for_data_analysis", // The service VS Code should connect to
+  "service": "da_freecodecamp", // The service VS Code should connect to
   "workspaceFolder": "/home/jovyan/work/src", // The path to open in VS Code once connected
   "customizations": {
     "vscode": {
@@ -20,9 +20,7 @@
         "ms-toolsai.vscode-jupyter-notebook-renderers",
         "ms-toolsai.vscode-jupyter-cell-tags",
         "VisualStudioExptTeam.vscodeintellicode",
-        "vscodevim.vim",
-        "GitHub.copilot",
-        "GitHub.copilot-chat"
+        "vscodevim.vim"
       ]
     }
   }
